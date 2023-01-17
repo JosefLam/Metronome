@@ -4,7 +4,7 @@ body {
 }
 
 
-#addContainer {
+#metronome {
     background-image: url("https://t4.ftcdn.net/jpg/04/84/11/15/360_F_484111532_W0WOkKeXQzF75XusA7R8e3llIDXqyCFm.jpg");
     padding: 4em;
     margin: 2em;
@@ -12,20 +12,18 @@ body {
     text-align: center;
     border-style: double;
     border: 2px solid black;
-    
 }
 
-.txt {
+.bpm-change {
+    padding: 1em;
     font-size: 2em;
-    width: 50vw;
-    padding: 1em 0;
 }
 
-#txt1 {
+#btnIncreaseBPM {
     background-image: linear-gradient(to bottom left, #ff64d6, #8c7cf3, #81f3ff, #65fec1);
 }
 
-#txt2 {
+#btnDecreaseBPM {
     background-image: linear-gradient(to bottom right, #ff64d6, #8c7cf3, #81f3ff, #65fec1);
 }
 
@@ -36,7 +34,11 @@ input {
     text-align: center;
 }
 
-
+#txtBPM {
+    font-size: 2em;
+    width: 50vw;
+    padding: 1em 0;
+}
 
 #logo {
     width: 4em;

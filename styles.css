@@ -16,9 +16,16 @@ body {
 }
 
 .bpm-change {
-    background-image: linear-gradient(to bottom right, #ff64d6, #8c7cf3, #81f3ff, #65fec1);
     padding: 1em;
     font-size: 2em;
+}
+
+#btnIncreaseBPM {
+    background-image: linear-gradient(to bottom left, #ff64d6, #8c7cf3, #81f3ff, #65fec1);
+}
+
+#btnDecreaseBPM {
+    background-image: linear-gradient(to bottom right, #ff64d6, #8c7cf3, #81f3ff, #65fec1);
 }
 
 input {

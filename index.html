@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Metronome</title>
+    <title>Timeserer</title>
     <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="metronome">
-        <input class="bpm-change" type="button" value="-" id="btnDecreaseBPM">
-        <input value="60" id="txtBPM">
-        <input class="bpm-change" type="button" value="+" id="btnIncreaseBPM">
+    <div id="addContainer">
+        <input class="txt" value="0" id="txt1">
+        <input type="button" value="x" id="times">
+        <input class="txt" value="0" id="txt2">
+        <input type="button" value="=" id="equals">
         <div>
-            <input type="button" value="start" id="btnStartStop">
+            <output class="txt" name="display" value="0" for="txt1 txt2"></output>
         </div>
         <div>
             <img id="logo" src="https://talentedteacherjobs.co.uk/wp-content/uploads/job-manager-uploads/company_logo/2020/10/Fulford-School.png" />
         </div>
     </div>
-    <i>Souce code: <a href="https://github.com/JosefLam/Metronome">view on GitHub</a></i>
+    
     
     <script src="lib1.js"></script>
 </body>

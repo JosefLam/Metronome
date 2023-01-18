@@ -8,6 +8,8 @@ const MAX_BPM = 120
 const MIN_BPM = 50
 var running = false;
 var bpm = 60;   //beats per minute
+var callback = undefined;
+var indicatorVisible = false;
 
 btnStartStop.addEventListener("click", function (e) {
     console.log("click");
@@ -28,6 +30,9 @@ function setSpeedAndStart() {
 
 function onTick() {
     console.log("Tick");
+    indicatorVisible = !indicatorVisible
+    console.log(indicatorVisible)
+    btnStartStop.style.backgroundColor = indicatorVisible ? "blue" : "white";
 }
 
 bpmInput.onchange = function (e) {

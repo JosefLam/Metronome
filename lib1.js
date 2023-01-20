@@ -4,6 +4,7 @@ const btnDecreaseBPM = document.getElementById("btnDecreaseBPM");
 const btnIncreaseBPM = document.getElementById("btnIncreaseBPM");
 const bpmInput = document.getElementById("txtBPM");
 const btnStartStop = document.getElementById("btnStartStop");
+const aud = document.getElementById("beep")
 const MAX_BPM = 120
 const MIN_BPM = 50
 var running = false;
@@ -33,6 +34,7 @@ function onTick() {
     indicatorVisible = !indicatorVisible
     console.log(indicatorVisible)
     btnStartStop.style.backgroundColor = indicatorVisible ? "blue" : "white";
+    aud.play()
 }
 
 bpmInput.onchange = function (e) {
